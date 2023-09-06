@@ -1,0 +1,25 @@
+*{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    background-color: #3194db;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    background-color: #fff;
+    width: 90rem;
+}
+
+#Instruccion {
+    position: absolute;
+    top: 22rem;
+    left: 19rem;
+}
+
+#Tarjeta {
+    position: absolute;
+    left: 38rem;
+    bottom: 7rem;
+}
