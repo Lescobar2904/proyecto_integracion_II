@@ -10,6 +10,7 @@ header{
     display: flex;
     background-color:   blue;
     height: 5rem;
+    border-bottom: 2px solid;
 }
 
 section{
@@ -22,8 +23,25 @@ footer{
     background-color: blue;
 }
 
+.divs{
+    text-align: center;
+    padding: 5px;
+    width: 600px;
+    border-top: 2px solid;
+}
+
+#divs1{
+    border-left: 4px solid;
+    border-right: 4px solid;
+}
+
 #nav1{
     background-color: blue;
     display: inline;
 
+}
+
+#opciones{
+    background-color: blue;
+    display: flex;
 }
