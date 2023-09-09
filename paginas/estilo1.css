@@ -29,6 +29,10 @@ footer{
     width: 600px;
     border-top: 2px solid;
 }
+.imga{
+    height: 25px;
+    width: 25px;
+}
 
 #divs1{
     border-left: 4px solid;
@@ -43,5 +47,9 @@ footer{
 
 #opciones{
     background-color: blue;
+    display: flex;
+}
+
+#conta{
     display: flex;
 }
