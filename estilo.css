@@ -40,30 +40,12 @@ h2{
     color: white;
     font-size: xx-large;
     position:static;
-    margin-top:500px;
+    margin-top:550px;
 }
 
 main {
     background-color:lightskyblue;
     display:flex;
-}
-
-table{
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td{
-    font-size: larger;
-    padding: 0 20px;
-    border: 6px solid blue;
-    margin-top:6px;
-    margin-bottom:6px;
-}
-
-.center-table {
-    border-color: blue;
-    margin:0 auto;
 }
 
 
