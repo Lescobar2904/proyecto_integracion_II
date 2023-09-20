@@ -1,0 +1,26 @@
+
+label{
+    display: block;
+}
+
+.Formulario{
+    background-color: rgb(240, 207, 212); 
+    padding: 30px; 
+    border: 1px solid black; 
+    border-radius: 10px; 
+    width: 350px; 
+    margin: left; 
+}
+body{
+    background-image: url(Img\ PagConsultas/pxfuel.jpg);
+    background-size: cover;
+
+}
+img{
+    width: 350px; 
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
