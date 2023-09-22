@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     var datos = document.getElementById("divs3");
     datos.addEventListener("click", function() {
-      window.location.href = "_diego/iniciarsesion.html";
+      window.location.href = "_Eduardo/IndustriasCORPA.html";
     });
   });
   

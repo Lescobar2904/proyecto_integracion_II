@@ -65,9 +65,11 @@ button {
 
 .options {
     margin-top: 20px;
+    margin-right: 10px;
 }
 
 .options a {
+    display: inline-block;
     text-decoration: none;
     color: black;
     margin: 0 10px;
