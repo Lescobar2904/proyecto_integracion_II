@@ -6,14 +6,23 @@
     <link rel="stylesheet" href="./CSS Asistencia/style.css">
 </head>
 <body>
-    <div id="Logo">
-        <img src="./Imagenes Asistencia/logo empresa.png" alt="Logo de la empresa" width="200">
-    </div>
-    <div id="Instruccion">
+    <header>
+        <div id="Logo">
+            <img src="./Imagenes Asistencia/logo empresa.png" alt="Logo de la empresa" width="200">
+        </div>
+        <a href="#">
+            <div id="btn">
+                <span id="btn_text">Inicio</span>
+            </div>
+        </a>
+    </header>
+    <div id="Instruccion" class="parte1">
         <h1>Escanee su tarjeta, por favor</h1>
     </div>
-    <div id="Tarjeta">
+    <div id="Tarjeta" class="parte1">
         <img src="./Imagenes Asistencia/codigo-barras-removebg-preview.png" alt="Tarjeta con codigo de barra" width="500">
     </div>
+    <input type="text" id="Barras">
+    <script src="script.js"></script>
 </body>
 </html>
