@@ -53,6 +53,22 @@ footer{
     padding: 30px;
 }
 
+.contra1{
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.contra1 img {
+    margin-right: 15px;
+}
+
+.contra2{
+    font-size: 15px;
+}
+
+
 .contra3{
     height: 30px;
     width: 30px;
@@ -80,7 +96,13 @@ footer{
 
 #redes{
     justify-content: center;
+    margin: 20px;
 }
+
+#redes img {
+    margin: 5px;
+}
+
 #N3{
     height: 150px;
     width: 230px;
@@ -90,12 +112,4 @@ footer{
     display: flex;
     flex-direction: column;
     float: right;
-}
-#contra1{
-    display: flex;
-    padding: 5px;
-}
-
-#contra2{
-    font-size: 15px;
 }
