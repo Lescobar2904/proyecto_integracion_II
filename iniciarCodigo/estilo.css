@@ -54,6 +54,10 @@ footer{
     background-color: #71C9CE;
 }
 
+.N10 {
+    display: flex;
+    justify-content: space-between;
+}
 .contra1{
     display: flex;
     padding: 5px;
