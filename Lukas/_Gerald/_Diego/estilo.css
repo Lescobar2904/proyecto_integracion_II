@@ -1,28 +1,28 @@
-* { box-sizing: border-box;
-margin: 0; padding: 0;
+* { 
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
 }
 
-html {
-    font-size: 62.5%;
-}
 
-header {
-    font-size: 1.6rem;
-    background-color:lightskyblue;
-    font-weight: bold;
-}
 
-footer {display: flex;
-    background-color: blue;
-    font-size: 1.8rem;
-    font-weight: bold;
+header{
     justify-content: space-between;
-    bottom:0;
-    position:fixed;
-    margin-left: 30px;
+    display: flex;
+    background-color:   #71C9CE;
+    height: 5rem;
+
 }
 
-aside {flex-direction: column;
+footer {
+    display: flex;
+    background-color: #71C9CE;
+    justify-content: space-between;
+    height: 7.3rem;
+}
+
+aside {
+    flex-direction: column;
 
 }
 
@@ -44,27 +44,34 @@ h2{
 }
 
 main {
-    background-color:lightskyblue;
     display:flex;
 }
 
 
-p{text-align: center;
-      color: blue;
+p{
+    text-align: center;
+    color: blue;
 }
 
-nav {text-align: center;
+nav {
+    text-align: center;
     color:white;
     word-spacing: 40rem;
 }
 
 
-p {text-align: right;
-word-spacing: 0.8rem;
+p {
+    text-align: right;
+    word-spacing: 0.8rem;
 }
 
 section {
     font-size: 1.8rem;
+}
+
+
+div {
+    align-self: center;
 }
 
 .padre {
@@ -76,6 +83,39 @@ section {
     margin-top: 10px;
 }
 
-div {
-    align-self: center;
+#imga{
+    height: 150px;
+    width: 100px;
+}
+
+#izq{
+    background-color: #71c9ce;
+    height: 35rem;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#izq1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#der{
+    background-color: white;
+    height: 35rem;
+    width: 80rem;
+    border: 1px solid;
+}
+
+#rut{
+    margin-left: 8px;
+}
+
+#digitador{
+    width: 25px;
+    margin-left: 8px;
 }
