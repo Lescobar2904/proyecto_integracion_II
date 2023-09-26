@@ -2,14 +2,28 @@
     font-size: 62.5%;
     padding: 0;
     margin: 0;
-    background-color: #3194db;
+    
+}
+
+header{
+    height:  100px;
+    width: 100%;
+
+    background-color: #A6E3E9;
+}
+
+body{
+    background-color: #71C9CE;
+
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     text-align: center;
-    font-size: 4rem;
-    background-color: #fff;
-    width: 90rem;
+    font-size: 3rem;
+    background-color: #ffffff;
+    width: 75rem;
 }
 
 #Instruccion {
@@ -18,8 +32,13 @@ h1 {
     left: 19rem;
 }
 
-#Tarjeta {
-    position: absolute;
-    left: 38rem;
-    bottom: 7rem;
+#Tarje {
+
+}
+
+#Logo{
+    width: 100px;
+    height: 150px;
+
+
 }
