@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
-<header>
-    <img id="Logo" src="./Imagenes/logo empresa.png" alt="Logo de la empresa" >
-</header>
 <body>
-    <div id="Instruccion">
+    <header>
+        <div id="Logo">
+            <img src="./Imagenes/logo-empresa.png" alt="Logo de la empresa" width="200">
+        </div>
+            <div id="btn">
+                <span id="btn_text">Inicio</span>
+            </div>
+    </header>
+    <div id="Instruccion" class="parte1">
         <h1>Escanee su tarjeta, por favor</h1>
     </div>
-    <div id="Tarjeta">
-        <img src="./Imagenes/tar.png" alt="Tarjeta con codigo de barra" id="Tarje">
+    <div id="Tarjeta" class="parte1">
+        <img src="./Imagenes/tar.png" alt="Tarjeta con codigo de barra" width="500">
     </div>
+    <input type="text" id="Barras">
+    <script src="script.js"></script>
 </body>
 </html>
