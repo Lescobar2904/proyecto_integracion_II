@@ -56,7 +56,7 @@ footer{
 
 .N10 {
     display: flex;
-    justify-content: space-between;
+    margin-left: 60px;
 }
 .contra1{
     display: flex;
