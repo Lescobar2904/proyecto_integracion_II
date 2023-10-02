@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:PaginaDeCosultas/Styles.css
 
 label{
     display: block;
@@ -36,3 +37,43 @@ img{
     right: 0;
     
 }
+=======
+
+label{
+    display: block;
+    
+}
+input{
+    display:block;
+}
+textarea{
+    resize: none;
+}
+link{
+    background-color: white;
+}
+
+.Formulario{
+    background-color: rgb(240, 207, 212); 
+    padding: 30px;
+    border: 1px solid black; 
+    border-radius: 10px; 
+    width: 350px; 
+    margin: left;
+
+   
+}
+body{
+    background-image: url(Img\ PagConsultas/pxfuel.jpg);
+    background-size: cover;
+
+}
+img{
+    width: 200px; 
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+>>>>>>> Stashed changes:Lukas/_Eduardo/Styles.css
