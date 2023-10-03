@@ -21,6 +21,14 @@ SET time_zone = "+00:00";
 -- Base de datos: `iniciosesion`
 --
 
+DELIMITER $$
+--
+-- Procedimientos
+--
+CREATE DEFINER=`root`@`localhost` PROCEDURE `mostrar_todo` ()   SELECT *
+FROM empleados$$
+
+DELIMITER ;
 -- --------------------------------------------------------
 
 --
