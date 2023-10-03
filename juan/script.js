@@ -11,6 +11,13 @@ barrasInput.addEventListener("keydown", function(event) {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    var asis = document.getElementById("btn");
+    asis.addEventListener("click", function() {
+        window.location.href = "Lukas/pag1.html";
+    });
+});
+
 
 
 
