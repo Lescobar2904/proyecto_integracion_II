@@ -1,7 +1,7 @@
 CREATE TABLE `trabajador` (
   `rut` INT(10),
   `nombre` Varchar(25),
-  `apellido ` Varchar(25),
+  `apellido` Varchar(25),
   `sueldo` INT(10),
   `salud` Varchar(10),
   `cargo` Varchar(15),
