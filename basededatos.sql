@@ -15,7 +15,6 @@ CREATE TABLE `asistencias` (
   `rut` INT(10),
   `Fecha` date,
   `codigo_barra` INT(15),
-  `` <type>,
   PRIMARY KEY (`id`),
   FOREIGN KEY (`rut`) REFERENCES `trabajador`(`rut`)
 );
@@ -23,7 +22,7 @@ CREATE TABLE `asistencias` (
 CREATE TABLE `consultas` (
   `id` INT(6),
   `rut` INT(10),
-  `email` Varchar(),
+  `email` Varchar(50),
   `cansulta` Varchar(300),
   PRIMARY KEY (`id`),
   FOREIGN KEY (`rut`) REFERENCES `trabajador`(`rut`)
