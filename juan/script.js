@@ -2,7 +2,7 @@ function escanear() {
     const codigoBarras = document.getElementById('codigoBarras').value;
 
     if (codigoBarras.trim() === '') {
-        mostrarMensaje('Por favor, ingrese un código de barras válido.', 'error');
+        mostrarMensaje('Por favor, ingrese un codigo de barras valido.', 'error');
         return;
     }
 
@@ -16,20 +16,20 @@ function escanear() {
     .then(response => response.json())
     .then(data => {
         if (data.error) {
-            mostrarMensaje(data.error, 'error');
+            mostrarMensaje('Error: ' + data.error, 'error');
         } else {
             mostrarMensaje(data.message, 'success');
             document.getElementById('codigoBarras').value = ''; 
         }
     })
     .catch(error => {
-        mostrarMensaje('Ha ocurrido un error en la solicitud.', error);
+        mostrarMensaje('Ha ocurrido un error en la solicitud: ' + error.message, 'error');
     });
 }
 
 function mostrarMensaje(mensaje, tipo) {
     const mensajeElement = document.getElementById('mensaje');
-    mensajeElement.innerHTML = mensaje;
+    mensajeElement.textContent = mensaje;
     mensajeElement.className = tipo;
 }
 
@@ -43,8 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
 window.addEventListener('load', function () {
     document.body.classList.add('loaded');
 });
-
-
 
 
 
