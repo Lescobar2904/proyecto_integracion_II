@@ -1,0 +1,136 @@
+*{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #71C9CE;
+    height: 15rem;
+}
+
+body {
+    background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.loaded {
+    opacity: 1; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    background: transparent;
+    width: 190%;
+}
+
+label {
+    display: none;
+}
+
+.ocean { 
+    height: 5%;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background: #015871;
+}
+
+.wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+#Instruccion {
+    position: absolute;
+    background: transparent;
+    top: 30%;
+    left: 18%;
+}
+
+#Tarjeta {
+    position: absolute;
+    left: 34%;
+    bottom: 25%;
+}
+
+#btn {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 7%;
+    left: 83%;
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+    border-radius: 10%;
+}
+
+#btn:hover {
+    background: #fff;
+}
+
+#btn_text {
+    background: transparent;
+}
+
+#codigoBarras {
+    background: transparent;
+    font-size: large;
+    display: inline-block;
+    position: absolute;
+    width: 18.1%;
+    top: 38.5%;
+    left: 40%;
+    border: 0;
+}
+
+#escanear{
+    border: 0.5px;
+    border-radius: 15%;
+    position: absolute;
+    left: 59%;
+    top: 38.5%;
+    font-size: large;
+}
+
+#mensaje {
+    position: absolute;
+    left: 39%;
+    top: 35.7%;
+    font-size: large;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+        transform: translate3d(0,-25px,0);
+    }
+    50% {
+        transform: translate3d(0,5px,0);
+    }
+}
