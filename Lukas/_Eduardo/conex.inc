@@ -5,3 +5,6 @@
     $basedatos = "prueba";
     $db = mysqli_connect($host,$usuario,$clave,$basedatos);
 ?>
+
+
+
