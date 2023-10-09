@@ -22,31 +22,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($result && $result->num_rows > 0) {
             $row = $result->fetch_assoc();
             $id = $row['id'];
-            $diasAsistidos = $row['dias_asistidos'] + 1;
+            $diasAsistidos = intval($row['dias_asistidos']) + 1;
 
-            $updateQuery = "UPDATE TI_asistencias SET dias_asistidos = $diasAsistidos WHERE id = $id";
+            $updateQuery = "UPDATE TI_asistencias SET dias_asistidos = '$diasAsistidos' WHERE id = '$id'";
 
             if ($mysqli->query($updateQuery) === TRUE) {
-                echo json_encode(['message' => 'Días asistidos actualizados']);
+                echo json_encode(['message' => 'Dias asistidos actualizados']);
             } else {
-                echo json_encode(['error' => 'Error al actualizar días asistidos']);
+                echo json_encode(['error' => 'Error al actualizar dias asistidos']);
             }
         } else {
-            $insertQuery = "INSERT INTO TI_asistencias (rut, Fecha, codigo_barra, dias_asistidos) VALUES (123456, NOW(), '$codigoBarras', 1)";
+            $insertQuery = "INSERT INTO TI_asistencias (rut, Fecha, codigo_barra, dias_asistidos) VALUES (NULL, NOW(), '$codigoBarras', '1')";
 
             if ($mysqli->query($insertQuery) === TRUE) {
-                echo json_encode(['message' => 'Código de barras guardado con éxito']);
+                echo json_encode(['message' => 'Codigo de barras guardado con exito']);
             } else {
-                echo json_encode(['error' => 'Error al guardar el código de barras']);
+                echo json_encode(['error' => 'Error al guardar el codigo de barras']);
             }
         }
 
         $mysqli->close();
     } else {
-        echo json_encode(['error' => 'No se proporcionó un código de barras válido']);
+        echo json_encode(['error' => 'No se proporciono un codigo de barras valido']);
     }
 } else {
-    echo json_encode(['error' => 'Método no permitido']);
+    echo json_encode(['error' => 'Metodo no permitido']);
 }
 ?>
 
