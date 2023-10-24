@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Escáner de Código de Barras</title>
+</head>
+<body>
+    <header>
+        <div id="Logo">
+            <img src="./Imagenes/logo-empresa.png" alt="Logo de la empresa" width="200">
+        </div>
+            <div id="btn">
+                <span id="btn_text">Inicio</span>
+            </div>
+    </header>
+        <div id="Instruccion" class="parte1">
+            <h1>Escáner de Código de Barras</h1>
+        </div>
+        <div id="Tarjeta" class="parte1">
+            <img src="./Imagenes/tar.png" alt="Tarjeta con codigo de barra" width="100%">
+        </div>
+        <label for="codigoBarras">Escanear código de barras:</label>
+        <input type="text" id="codigoBarras" placeholder="Haga click aquí antes de escanear">
+        <button onclick="escanear()" id="escanear">Escanear</button>
+        <p id="mensaje"></p>
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>

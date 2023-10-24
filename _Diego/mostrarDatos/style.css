@@ -1,0 +1,13 @@
+
+
+
+
+
+table, th, td{
+    border: 1px solid;
+}
+
+table{
+    width: 80%;
+    border-collapse: collapse;
+}
