@@ -29,7 +29,7 @@
                 <i class="fa-solid fa-users"></i>
                 Nombre completo
             </label>
-            <input type="text" placeholder="Ingrese nombre completo" name="NombreCompleto"  autocomplete="off">
+            <input type="text" placeholder="Ingrese nombre completo" name="Nombre_Completo"  autocomplete="off">
             
             <label for="">
             <i class="fa-solid fa-user"></i>

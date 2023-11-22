@@ -1,38 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-color: #71C9CE;
+}
 
-label{
+header {
+    text-align: center;
+}
+
+
+label {
     display: block;
-    
+    margin-bottom: 5px;
 }
-input{
-    display:block;
-}
-textarea{
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
     resize: none;
 }
-link{
-    background-color: white;
+
+input[type="submit"] {
+    background-color: #71C9CE;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.Formulario{
-    background-color: rgb(240, 207, 212); 
-    padding: 30px;
-    border: 1px solid black; 
-    border-radius: 10px; 
-    width: 350px; 
-    margin: left;
+input[type="submit"]:hover {
+    background-color: #90dae1;
+}
 
-   
+#img{
+    height: 200px;
+    width: 200px;
 }
-body{
-    background-image: url(Img\ PagConsultas/pxfuel.jpg);
-    background-size: cover;
 
+.Formulario {
+    width: 300px;
+    padding: 20px;
+    background-color: #A6E3E9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-img{
-    width: 200px; 
-    height: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    
-}
+

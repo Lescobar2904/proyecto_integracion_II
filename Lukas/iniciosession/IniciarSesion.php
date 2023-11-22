@@ -21,7 +21,7 @@
         header("Location: Index.php?error=La clave Es Requerida");
         exit();
     }else{
-
+        $Clave = md5($Clave);
 
         $Sql = "SELECT * FROM   TI_usuarios WHERE Usuario = '$Usuario' AND Clave='$Clave'";
         $result = mysqli_query($conexion, $Sql);
@@ -32,7 +32,7 @@
                 $_SESSION['Usuario'] = $row['Usuario'];
                 $_SESSION['Nombre_Completo'] = $row['Nombre_Completo'];
                 $_SESSION['Id'] = $row['Id'];
-                header("Location: pag1.HTML");
+                header("Location: mostrarDatos3");
                 exit();
             }else {
                 header("Location: Index.php?error=El usuario o la clave son incorrectas");

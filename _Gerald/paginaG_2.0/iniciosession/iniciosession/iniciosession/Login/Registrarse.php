@@ -4,7 +4,7 @@
     include_once('../configuracion/conexion.php');
     include('../configuracion/conexion.php');
 
-if (isset($_POST['Usuario']) && isset($_POST['NombreCompleto']) && isset($_POST['Clave']) && isset($_POST['RClave'])) {
+if (isset($_POST['Usuario']) && isset($_POST['Nombre_Completo']) && isset($_POST['Clave']) && isset($_POST['RClave'])) {
     function validar($data){
         $data = trim($data);
         $data = stripslashes($data);
@@ -15,11 +15,11 @@ if (isset($_POST['Usuario']) && isset($_POST['NombreCompleto']) && isset($_POST[
 
 
     $usuario =  validar($_POST['Usuario']);
-    $nombreCompleto =  validar($_POST['NombreCompleto']);
+    $nombreCompleto =  validar($_POST['Nombre_Completo']);
     $clave =  validar($_POST['Clave']);
     $rClave =  validar($_POST['RClave']);
 
-    $usuario_Datos = 'Usuario=' . $usuario . '&NombreCompleto=' . $nombreCompleto;
+    $usuario_Datos = 'Usuario=' . $usuario . '&Nombre_Completo=' . $nombreCompleto;
     
 
     if (empty($usuario)) {
@@ -41,14 +41,14 @@ if (isset($_POST['Usuario']) && isset($_POST['NombreCompleto']) && isset($_POST[
         //hashing
 
 
-        $sql = "SELECT * FROM usuarios WHERE Usuario = '$usuario'";
+        $sql = "SELECT * FROM TI_usuarios WHERE Usuario = '$usuario'";
         $query = $conexion->query($sql);
 
         if (mysqli_num_rows($query) > 0) {
             header("location: ../Registrarse.php?error=El nombre de usuario ya existe&$usuarios_Datos");
             exit();
         }else {
-            $sql2 = "INSERT INTO usuarios(NombreCompleto, Usuario, Clave) VALUES ('$nombreCompleto','$usuario','$clave')";
+            $sql2 = "INSERT INTO TI_usuarios(Nombre_Completo, Usuario, Clave) VALUES ('$nombreCompleto','$usuario','$clave')";
             $query2 = $conexion->query($sql2);
 
             if ($query2) {

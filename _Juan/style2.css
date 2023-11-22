@@ -96,8 +96,8 @@ label {
     display: inline-block;
     position: absolute;
     width: 18.1%;
-    top: 38.5%;
-    left: 40%;
+    top: 40%;
+    left: 38%;
     border: 0;
 }
 
@@ -105,16 +105,16 @@ label {
     border: 0.5px;
     border-radius: 15%;
     position: absolute;
-    left: 59%;
-    top: 38.5%;
+    left: 56.5%;
+    top: 40.2%;
     font-size: large;
 }
 
 #mensaje {
     position: absolute;
-    left: 39%;
-    top: 35.7%;
-    font-size: large;
+    left: 37%;
+    top: 36%;
+    font-size: 22px;
 }
 
 @keyframes wave {

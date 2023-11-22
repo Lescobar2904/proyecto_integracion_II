@@ -32,7 +32,7 @@
     #codigoBarras {
         width: 19.3%;
         top: 38%;
-        left: 40%;
+        left: 37%;
     }
 
     #mensaje {
@@ -42,7 +42,7 @@
     }
 
     #escanear{
-        left: 60%;
+        left: 57%;
         top: 38.3%;
         font-size: medium;
     }

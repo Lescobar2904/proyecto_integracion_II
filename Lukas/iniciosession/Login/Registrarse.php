@@ -38,8 +38,7 @@ if (isset($_POST['Usuario']) && isset($_POST['Nombre_Completo']) && isset($_POST
         header("location: ../Registrarse.php?error=Las claves no coinciden&$usuarios_Datos");
         exit();
     }else {
-        //hashing
-
+        $clave = md5($clave);
 
         $sql = "SELECT * FROM TI_usuarios WHERE Usuario = '$usuario'";
         $query = $conexion->query($sql);

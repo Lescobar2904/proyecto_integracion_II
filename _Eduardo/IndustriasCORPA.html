@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultas</title>
-    <link rel="icon" href="Img PagConsultas/Industrias-CORP-S.A-removebg-preview.png" >
+    <link rel="icon" href="Img PagConsultas/logo.png" >
     <link rel="stylesheet" type="text/css" href="Styles.css">
 </head> 
+<header>
+    <img id="img" src="Img PagConsultas/logo.png" alt="MiLogo">
+</header>
 <body>
-<img src="Img PagConsultas/Industrias CORP S.A.jpg" alt="MiLogo">    
-<h1>Consultas   </h1>
+    <h1>Consultas</h1>
+    <div class="Formulario" >    
 
-<div class="Formulario" >    
+        <form action="base.php" method="post">
+        <label for="Rut">
+            <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Ingrese su Rut </span> 
+        <input type="text" id="Rut" name="Rut" required>
+        <label for="text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Ingrese su Consulta
+            <textarea name="text" id="text" cols="40" rows="10" required></textarea>
+        </label>
+        <input type="submit">
+        </form>
 
-    <form action="base.php" method="post">
-    <label for="Rut">
-        <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> ingrese su Rut </span> 
-     <input type="text" id="Rut" name="Rut" required>
-    <label for="text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Ingrese su Consulta
-        <textarea name="text" id="text" cols="40" rows="10" required></textarea>
-    </label>
-    <input type="submit">
     </form>
-
-</form>
-</div>
-
+    </div>
+</body>
 

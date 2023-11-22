@@ -23,14 +23,14 @@
     }else{
 
 
-        $Sql = "SELECT * FROM usuarios WHERE Usuario = '$Usuario' AND Clave='$Clave'";
+        $Sql = "SELECT * FROM   TI_usuarios WHERE Usuario = '$Usuario' AND Clave='$Clave'";
         $result = mysqli_query($conexion, $Sql);
 
         if (mysqli_num_rows($result) === 1) {
             $row = mysqli_fetch_assoc($result);
             if ($row['Usuario'] === $Usuario && $row['Clave'] === $Clave) {
                 $_SESSION['Usuario'] = $row['Usuario'];
-                $_SESSION['NombreCompleto'] = $row['NombreCompleto'];
+                $_SESSION['Nombre_Completo'] = $row['Nombre_Completo'];
                 $_SESSION['Id'] = $row['Id'];
                 header("Location: Inicio.php");
                 exit();
