@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($input['codigoBarras'])) {
         $codigoBarras = $input['codigoBarras'];
 
-        $mysqli = new mysqli('db.inf.uct.cl', 'lescobar', '21694313', 'A2023_lescobar');
+        $mysqli = new mysqli(x);
 
         if ($mysqli->connect_error) {
             echo json_encode(['error' => 'Error al conectar a la base de datos']);
